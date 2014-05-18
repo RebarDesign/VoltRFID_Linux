@@ -18,13 +18,18 @@ wget https://github.com/RebarDesign/VoltRFID_Linux/tree/master/libnfc-1.7.1
 ====
 
 ==3==
+Optional 
+
 Go to /etc/nfc/
 
 wget https://github.com/RebarDesign/VoltRFID_Linux/blob/master/devices.d/pn532_uart_on_rpi.conf
 
+====
 ==4==
 Go to /etc/blacklist/
 wget https://github.com/RebarDesign/VoltRFID_Linux/blob/master/blacklist-libnfc.conf
+
+====
 
 
 ==5==
