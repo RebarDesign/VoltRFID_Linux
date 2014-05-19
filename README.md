@@ -33,6 +33,11 @@ wget https://github.com/RebarDesign/VoltRFID_Linux/blob/master/blacklist-libnfc.
 
 Then, restart or unplug the device, unload modules (sudo modprobe -r pn533 nfc), then re-plug the device.
 
+or 
+lsusb - use vendor and product info
+sudo modprobe ipaq vendor=0x0bb4 product=0x0b03
+ 
+
 ====
 
 
