@@ -50,6 +50,7 @@ Links
 http://robospatula.blogspot.dk/2014/01/configure-install-libnfc-linux-PN532-breakout-board.html
 https://code.google.com/p/libnfc/issues/detail?id=253
 https://groups.google.com/forum/#!topic/libnfc-commits/rdb1Pfplzvc
+http://www.libnfc.org/community/topic/668/solved-scl3711-interface-0-claimed-by-pn533-nfclist-sets-conf/
 
 
 
