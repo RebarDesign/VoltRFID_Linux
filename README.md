@@ -18,16 +18,21 @@ wget https://github.com/RebarDesign/VoltRFID_Linux/tree/master/libnfc-1.7.1
 ====
 
 ==3==
-Optional 
 
-Go to /etc/nfc/
-
-wget https://github.com/RebarDesign/VoltRFID_Linux/blob/master/devices.d/pn532_uart_on_rpi.conf
+Using an ACR122 device with libnfc and without tag (e.g. to use NFCIP modes or
+card emulation) needs yet another PCSC-lite tweak: You need to allow usage of
+CCID Exchange command.  To do this, edit libccid_Info.plist configuration file
+(usually /etc/libccid_Info.plist) and locate "<key>ifdDriverOptions</key>",
+turn "<string>0x0000</string>" value into 0x0001 to allow CCID exchange or
+0x0005 to allow CCID exchange and bogus devices (cf previous remark) and
+restart pcscd daemon.
 
 ====
 ==4==
 Go to /etc/blacklist/
 wget https://github.com/RebarDesign/VoltRFID_Linux/blob/master/blacklist-libnfc.conf
+
+Then, restart or unplug the device, unload modules (sudo modprobe -r pn533 nfc), then re-plug the device.
 
 ====
 
