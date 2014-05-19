@@ -23,8 +23,7 @@ Using an ACR122 device with libnfc and without tag (e.g. to use NFCIP modes or
 card emulation) needs yet another PCSC-lite tweak: You need to allow usage of
 CCID Exchange command.  To do this, edit libccid_Info.plist configuration file
 (usually /etc/libccid_Info.plist) and locate "<key>ifdDriverOptions</key>",
-turn "<string>0x0000</string>" value into 0x0001 to allow CCID exchange or
-0x0005 to allow CCID exchange and bogus devices (cf previous remark) and
+turn "<string>0x0000</string>" value into 0x0005 to allow CCID exchange and bogus devices (cf previous remark) and
 restart pcscd daemon.
 
 ====
