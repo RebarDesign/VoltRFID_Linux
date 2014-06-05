@@ -28,7 +28,7 @@
 
 #include "nfc-utils.h"
 
-#define MAX_DEVICE_COUNT 2
+#define MAX_DEVICE_COUNT 6
 #define MAX_TARGET_COUNT 1
 
 int client_socket;
