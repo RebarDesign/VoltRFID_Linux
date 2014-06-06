@@ -7,17 +7,14 @@ Linux files for RFID reader installation
 First make sure you have required compilation dependencies.
 ###
 sudo apt-get install libusb-dev libpcsclite-dev
+
+sudo apt-get install libusb-0.1-4 libpcsclite1 libccid pcscd
+
+
 ###
 ====
 
 ==2==
-Download and extract libnfc archive
-###
-wget https://github.com/RebarDesign/VoltRFID_Linux/tree/master/libnfc-1.7.1
-###
-====
-
-==3==
 
 Using an ACR122 device with libnfc and without tag (e.g. to use NFCIP modes or
 card emulation) needs yet another PCSC-lite tweak: You need to allow usage of
@@ -27,7 +24,8 @@ turn "<string>0x0000</string>" value into 0x0005 to allow CCID exchange and bogu
 restart pcscd daemon.
 
 ====
-==4==
+==3==
+
 Go to /etc/blacklist/
 wget https://github.com/RebarDesign/VoltRFID_Linux/blob/master/blacklist-libnfc.conf
 
