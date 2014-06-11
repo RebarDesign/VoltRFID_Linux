@@ -10,6 +10,8 @@ sudo apt-get install libusb-dev libpcsclite-dev
 
 sudo apt-get install libusb-0.1-4 libpcsclite1 libccid pcscd
 
+sudo apt-get install pkg-config ( if not installed ) 
+
 
 ###
 ====
@@ -24,22 +26,11 @@ turn "<string>0x0000</string>" value into 0x0005 to allow CCID exchange and bogu
 restart pcscd daemon.
 
 ====
+
 ==3==
 
-Go to /etc/blacklist/
-wget https://github.com/RebarDesign/VoltRFID_Linux/blob/master/blacklist-libnfc.conf
+Copy libnfc from USB Stick
 
-Then, restart or unplug the device, unload modules (sudo modprobe -r pn533 nfc), then re-plug the device.
-
-or 
-lsusb - use vendor and product info
-sudo modprobe ipaq vendor=0x0bb4 product=0x0b03
- 
-
-====
-
-
-==5==
 Configure Drivers
 ###
 cd libnfc-1.7.1
