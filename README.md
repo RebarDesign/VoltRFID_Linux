@@ -41,8 +41,23 @@ make
 
 sudo make install
 
-###
 ====
+
+==4==
+
+Create /etc/modprobe.d/blacklist-libnfc.conf
+
+Write :
+
+blacklist pn533
+blacklist nfc
+
+Save and close
+
+sudo modprobe -r pn533 nfc
+
+====
+
 Links
 
 http://robospatula.blogspot.dk/2014/01/configure-install-libnfc-linux-PN532-breakout-board.html
