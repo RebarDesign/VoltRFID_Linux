@@ -6,6 +6,8 @@ Linux files for RFID reader installation
 ==1==
 First make sure you have required compilation dependencies.
 ###
+sudo apt-get update
+
 sudo apt-get install libusb-dev libpcsclite-dev
 
 sudo apt-get install libusb-0.1-4 libpcsclite1 libccid pcscd
