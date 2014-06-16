@@ -72,6 +72,12 @@ http://www.libnfc.org/community/topic/668/solved-scl3711-interface-0-claimed-by-
 
 http://libnfc.googlecode.com/git/README
 
+libnfc
+
+/usr/local/lib libnfc.la  libnfc.a
+
+/usr/bin/install
+
 
 
 
