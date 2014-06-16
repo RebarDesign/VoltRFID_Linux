@@ -76,6 +76,8 @@ libnfc
 
 /usr/local/lib libnfc.la  libnfc.a
 
+/usr/local/include nfc.h 
+
 /usr/bin/install
 
 
