@@ -58,6 +58,7 @@ Create /etc/modprobe.d/blacklist-libnfc.conf
 Write :
 
 blacklist pn533
+
 blacklist nfc
 
 Save and close
