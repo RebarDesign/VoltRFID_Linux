@@ -2,12 +2,15 @@ apt-get install libusb-dev libpcsclite-dev
 apt-get install libusb-0.1-4 libpcsclite1 libccid pcscd
 apt-get install pkg-config
 
+OWN=`pwd`
+echo $OWN
+
 /usr/bin/install -c   libnfc.la '/usr/local/lib'
 /usr/bin/install -c libnfc.so.5.0.1 /usr/local/lib/libnfc.so.5.0.1
 cd /usr/local/lib
 ln -s -f libnfc.so.5.0.1 libnfc.so.5
 ln -s -f libnfc.so.5.0.1 libnfc.so
-cd /home/elvis/app
+cd $OWN
 /usr/bin/install -c libnfc.lai /usr/local/lib/libnfc.la
 /usr/bin/install -c libnfc.a /usr/local/lib/libnfc.a
 chmod 644 /usr/local/lib/libnfc.a
@@ -19,4 +22,4 @@ cp /usr/local/lib/libnfc.so.5.0.1 /usr/lib
 cd /usr/lib/
 ln -s -f libnfc.so.5.0.1 libnfc.so.5
 ln -s -f libnfc.so.5.0.1 libnfc.so
-cd /home/elvis/app
+cd $OWN
