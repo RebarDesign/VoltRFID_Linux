@@ -44,6 +44,8 @@ restart pcscd daemon.
 
 Copy /readData from USB 
 
+chmod +x rfid-reader
+
 
 
 
