@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="project">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=1">
+    <title>Festival Scanner</title>
+    <link rel="stylesheet" type="text/css" href="css/foundation.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/jquery.plugin.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-resource.min.js"></script>
+	<script src="js/project.js"></script>
+</head>
+<body>
+	<div class="row">
+         <div id="bLogOut" class="small-3 columns small-offset-9 columns">
+    		<a class="small alert button" ng-click="doRestart();" >Restart</a>
+             <!--<input type="text" placeholder="MockBattery" />	-->
+         </div>
+    </div>
+  
+    <div class="row">
+     	 <div style="height:20px" ></div>
+         <div style="margin-bottom:100px" class="large-3  large-centered columns "><img src="img/Volt-logo-hvid.png" /></div>     
+     </div> 
+     
+ <div ng-view></div>    
+    
+    <div class="row">
+    	<div style="height:200px" ></div>
+        
+                <div class="large-4 columns">
+                <p>Connected to Server</p>
+                </div>
+                
+            	<div class="large-2 large-pull-2 columns">
+                	<div class="progress small success radius">
+                <span class="meter" style="width: 100%"></span>
+                </div></div>
+                
+               <div class="large-1 columns">
+        	     <p>Next Sync</p>
+               </div>
+               <div class="large-2  columns">
+                 <div id="defaultCountdown"></div>
+               </div>
+            <div style="height:100px" ></div>
+        </div>
+    </div>
+    
+	<script src="js/cordova-2.0.0.js"></script>
+    <script src="js/VScript.js"></script>
+</body>
+</html>
