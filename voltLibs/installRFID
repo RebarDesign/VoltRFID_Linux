@@ -1,3 +1,11 @@
+apt-get update && apt-get install git-core curl build-essential openssl libssl-dev
+git clone https://github.com/joyent/node.git
+cd node
+git checkout v0.9.5 (or the version you want to build)
+./configure --openssl-libpath=/usr/lib/ssl
+make
+make install
+
 apt-get install libusb-dev libpcsclite-dev
 apt-get install libusb-0.1-4 libpcsclite1 libccid pcscd
 apt-get install pkg-config
