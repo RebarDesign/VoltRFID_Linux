@@ -69,6 +69,12 @@ sudo modprobe -r pn533 nfc
 
 ==5== 
 
+reboot
+
+====
+
+==6== 
+
 from /readData
 
 node index.js 
