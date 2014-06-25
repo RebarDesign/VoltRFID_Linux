@@ -1,13 +1,13 @@
 VoltRFID_Linux
 ==============
 
-Linux files for RFID reader installation
+RFID Linux Installation Procedure
 
 ===============
 
 17 Jun 2014 
 
-(C) Elvis Adomnica , Sebastian Florian
+(C) Rebar Design
 
 ====
 
