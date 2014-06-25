@@ -67,23 +67,35 @@ sudo modprobe -r pn533 nfc
 
 ====
 
-==5== 
+==5==
 
-reboot
+Create /etc/init.d/readerStart 
+
+Write:
+
+#!/bin/bash
+
+#Replace with path of readData folder
+cd /home/voltRebar/readData/
+#Pinpoint node path
+/usr/local/bin/node index.js &
+
+Save and Close
+
+chmod +x readerStart
 
 ====
 
 ==6== 
 
-from /readData
+reboot
 
-node index.js 
-
+====
 
 ====
 
 Scan chargers 
-
+Results will appear in console
 
 
 (C)
