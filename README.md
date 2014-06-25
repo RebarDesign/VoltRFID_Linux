@@ -11,16 +11,11 @@ RFID Linux Installation Procedure
 
 ====
 
-Make sure nodejs is installed. 
-
-
-
-==1==
+#==1==
 
 Copy /voltLib files from USB
 
 run as root :
-
 
 chmod +x installRFID
 
@@ -29,7 +24,7 @@ chmod +x installRFID
 ###
 ====
 
-==2==
+#==2==
 
 Using an ACR122 device with libnfc and without tag (e.g. to use NFCIP modes or
 card emulation) needs yet another PCSC-lite tweak: You need to allow usage of
@@ -40,7 +35,7 @@ restart pcscd daemon.
 
 ====
 
-==3==
+#==3==
 
 Copy /readData from USB 
 
@@ -51,7 +46,7 @@ chmod +x rfid-reader
 
 ====
 
-==4==
+#==4==
 
 Create /etc/modprobe.d/blacklist-libnfc.conf
 
@@ -67,18 +62,17 @@ sudo modprobe -r pn533 nfc
 
 ====
 
-==5==
+#==5==
 
 Create /etc/init.d/readerStart 
 
 Write:
 
-#!/bin/bash
-
-#Replace with path of readData folder
-cd /home/voltRebar/readData/
-#Pinpoint node path
-/usr/local/bin/node index.js &
+- #!/bin/bash
+- #Replace with path of readData folder
+- cd /home/voltRebar/readData/
+- #Pinpoint node path
+- /usr/local/bin/node index.js &
 
 Save and Close
 
