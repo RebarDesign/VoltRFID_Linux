@@ -69,9 +69,9 @@ Create /etc/init.d/readerStart
 Write:
 
 - #!/bin/bash
-- #Replace with path of readData folder
+- [Replace with path of readData folder]
 - cd /home/voltRebar/readData/
-- #Pinpoint node path
+- [Pinpoint node path]
 - /usr/local/bin/node index.js &
 
 Save and Close
