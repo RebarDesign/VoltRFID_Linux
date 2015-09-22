@@ -8,10 +8,14 @@ Technologies used: Node.js, Express, MySQL, Socket.io, Angular.js, Twitter Boots
 ## Components
 
 Components: 
-1. Modified libnfc library allowing concurrent scans from multiple NFC readers. (using fork and Unix pipes).
-2. Node.js script on server side handling the readers output and the real-time communication with the back-end server. 
-3. Node.js back-end server for HTTP requests, database access and events handling (push notification on RFID scan). 
-4. Front-end written in Angular and Socket.io.
+1. Modified libnfc library allowing concurrent scans from multiple NFC readers. (using fork and Unix pipes).  
+
+2. Node.js script on server side handling the readers output and the real-time communication with the back-end server.   
+
+3. Node.js back-end server for HTTP requests, database access and events handling (push notification on RFID scan).   
+
+4. Front-end written in Angular and Socket.io.  
+
 
 
 ## How to use
