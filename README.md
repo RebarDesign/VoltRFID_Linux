@@ -14,13 +14,6 @@ Components:
 4. Front-end written in Angular and Socket.io.
 
 
-## Contact
-
- [@SebFlorian](https://twitter.com/SebFlorian).
-
-
-
-
 ## How to use
 
 ==============
@@ -108,10 +101,9 @@ chmod +x readerStart
 
 reboot
 
-====
-
-====
-
 Scan chargers 
 Results will appear in console
 
+## Contact
+
+ [@SebFlorian](https://twitter.com/SebFlorian).
