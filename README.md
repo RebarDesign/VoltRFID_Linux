@@ -108,6 +108,10 @@ reboot
 Scan chargers 
 Results will appear in console
 
+## Credit
+
+Elvis Adomnica ( @EAdomnica) [Github](https://github.com/elvisvoer)
+
 ## Contact
 
  [@SebFlorian](https://twitter.com/SebFlorian).
