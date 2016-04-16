@@ -20,6 +20,9 @@ io.sockets.on('connection', function (socket) {
     socket.on('send', function (data) {
         io.sockets.emit('message', data);
     });
+    socket.on('up', function (data) {
+        io.sockets.emit('up score', data);
+    });
     socket.on('doRestart', function (data) {
 	console.log('Restarting...');
         io.sockets.emit('restart', { }); 
